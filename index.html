@@ -25,9 +25,9 @@ while (research()):
     {% assign recent_posts = "now" | date: "%Y" | minus: timeframe  %}
     {% for post in site.posts %}
     {% assign post_in_year = post.date | date: "%Y" | plus: 0 %}
-    {% if post_in_year > recent_posts %}
+    <!-- {% if post_in_year > recent_posts %} -->
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
+    <!-- {% endif %} -->
     {% endfor %}
   </ul>
 </div>
