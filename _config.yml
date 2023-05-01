@@ -3,7 +3,6 @@ Rouge: true
 highlighter: rouge
 permalink: /blog/:year/:month/:day/:title
 name: Sijin LI
-url: https://sijinli.github.io
 baseurl: /blog_arxiv_2023.github.io
 
 google_analytics: UA-42209870-1
@@ -20,8 +19,8 @@ collections:
     permalink: /blog/tag/:name/
 
 pages_list:       
-  About: '/about'
-  Posts: '/posts'
+  About: '/blog_arxiv_2023.github.io/about'
+  Posts: '/blog_arxiv_2023.github.io/posts'
 
 gems:
   - jekyll-gist
