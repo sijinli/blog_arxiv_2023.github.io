@@ -14,15 +14,15 @@ paginate:  3
 collections:
   my_categories:
     output: true
-    permalink: /blog/category/:name/
+    permalink: /blog_arxiv_2023.github.io/blog/category/:name/
   my_tags:
     output: true
-    permalink: /blog/tag/:name/
+    permalink: /blog_arxiv_2023.github.io/blog/tag/:name/
 
 pages_list:       
   About: '/blog_arxiv_2023.github.io/about'
   Posts: '/blog_arxiv_2023.github.io/posts'
-  post_by_tags: '/blog_arxiv_2023.github.io/posts'
+  posts_by_tag: '/blog_arxiv_2023.github.io/pages/pages_by_tag'
 
 gems:
   - jekyll-gist
