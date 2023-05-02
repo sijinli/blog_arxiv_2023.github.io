@@ -27,13 +27,13 @@ title: Resources
 * auto-gen TOC:
 {:toc}
 
-# <a href="/resources/book">Books</a>
+# <a href="{{ site.baseurl }}/resources/book">Books</a>
 
-# <a href="/resources/papers">Paper</a>
+# <a href="{{ site.baseurl }}/resources/papers">Paper</a>
 
-#  <a href="/resources/course">Course and Tutorial</a>
+#  <a href="{{ site.baseurl }}/resources/course">Course and Tutorial</a>
 
-# <a href="/resources/tools/code">Code and Tools</a>
+# <a href="{{ site.baseurl }}/resources/tools/code">Code and Tools</a>
 # 有趣的网站
 
 + [中国诗词库][21]

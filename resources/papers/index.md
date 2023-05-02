@@ -12,4 +12,4 @@ title: papers
 
 + [Top 100 papers in Vision Science][1]
 + [Gaussian Process for machine learning][2]
-+ <a href="/resources/papers/system">Machine Learning System</a>
++ <a href="{{ site.baseurl }}/resources/papers/system">Machine Learning System</a>
