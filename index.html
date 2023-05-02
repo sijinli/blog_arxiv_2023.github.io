@@ -17,33 +17,11 @@ while (research()):
 </pre>
 </div>
 
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-
-{% assign tag_words = site_tags | split:',' | sort %}
-
-  <ul class="tag-box inline">
-  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-  <li><a href="{{ site.url }}{{ site.baseurl }}/pages/posts_by_tag.html#{{ this_word | cgi_escape }}">{{ this_word }} <sup><span>{{ site.tags[this_word].size }}</span> </sup> </a></li>
-  {% endunless %}{% endfor %}
-  </ul>
-
-  <div id="home">
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-
-
-
 <div id="home">
   <h3> Recent posts </h3>
   <ul class="posts">
     {% assign timeframe = 1 %}
-    {% assign recent_posts = "now" | date: "%Y" | minus: timeframe  %}
-    <h>hre></h>
+    {% assign recent_posts = site.date | date: "%Y" | minus: timeframe  %}
     {% for post in site.posts %}
     {% assign post_in_year = post.date | date: "%Y" | plus: 0 %}
     <!-- {% if post_in_year > recent_posts %} -->
