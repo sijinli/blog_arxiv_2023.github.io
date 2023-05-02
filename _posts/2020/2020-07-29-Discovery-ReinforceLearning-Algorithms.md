@@ -20,7 +20,7 @@ Still in progress...
 这篇论文希望可以直接优化求解出更新的方式，（或者目标）。
 # 思想
 
-![](/images/2020-07-29-LPG.png){:height="360px" width="960px"}
+![]({{ site.baseurl }}/images/2020-07-29-LPG.png){:height="360px" width="960px"}
 
 本文的核心在于通过学习一个trainer来指导predictor的预测。
 这里的trainer 是一个时序的处理模块，其每一个时刻会输出policy $$ \hat{\pi} $$ 以及
