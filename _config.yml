@@ -22,6 +22,7 @@ collections:
 pages_list:       
   About: '/blog_arxiv_2023.github.io/about'
   Posts: '/blog_arxiv_2023.github.io/posts'
+  post_by_tags: '/blog_arxiv_2023.github.io/posts'
 
 gems:
   - jekyll-gist
